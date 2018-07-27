@@ -7,7 +7,7 @@
 [![TWITTER](https://img.shields.io/badge/BY-@oncase-lightgrey.svg?style=for-the-badge)](https://twitter.com/oncase) 
 
 
-## **"Tarantulla-YouTube: the solution to gather social media data from publishers of your interest"**
+## **"Tarantulla: the solution to gather social media data from publishers of your interest"**
 
 If you want to know more, check out Tarantulla's [landing page](http://tarantulla.io/) and each of the modules:
 
