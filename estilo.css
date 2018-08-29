@@ -16,7 +16,8 @@ a.smal {font-size: .7rem;color: #4c5775;text-decoration: underline;cursor: point
 .extremos {justify-content: space-between;}
 .relative{position: relative}
 .wrap{flex-wrap: wrap}
-.center{text-align: center}
+.center{text-align: center;}
+.flex.center{align-items: center}
 
 .title,.big-text{font-family: 'Oswald-Medium',sans-serif;   font-weight: 100;  font-size: 2.3rem;color: #4c5775; }
 .subtitulo{font-family:'Quicksand-bold',sans-serif; font-size: 1.2rem }
@@ -85,7 +86,7 @@ ul.list {display: table;padding: .5rem 1.5rem;margin: 1rem 0;}
 .box-titulo p.descricao {max-width: 750px;margin: 1rem auto 0;text-align: center;line-height: 2.2rem;letter-spacing: 1px;}
 .lista.tarantullas {width: 100%;display: table;}
 .lista.tarantullas img {max-width:175px;margin: 1rem 0 1.5rem;}
-.lista.lista.tarantullas p {font-size: .9rem;line-height: 1.6rem;margin-bottom: 1.6rem; text-align: center}
+.lista.lista.tarantullas p,.lista-cases p {font-size: .9rem;line-height: 1.6rem;margin-bottom: 1.6rem; text-align: center}
 .lista.tarantullas li {width: 100%;max-width: 400px;float: left;display: flex;align-items: center;flex-direction: column;margin-bottom: 0; position: relative;}
 .lista.tarantullas li:nth-child(2) {float: right;}
 .lista.tarantullas li:nth-child(3) {    clear: both;margin: 0 auto;float: unset;}
@@ -134,23 +135,15 @@ font-weight: 100;  letter-spacing: 1px;}
 #termos .estrutura a {padding: .3rem 0;letter-spacing: 1px;display: block;line-height: 1.3rem;font-size: .8rem;}
 #termos ul{margin-top: 1rem; margin-left: .3rem} 
 
-/* box-login */
-.form{display: none; max-width: 350px;margin: 0 auto; }
-.form .button[type="submit"]{width: -moz-fit-content;width: fit-content;border: none;margin: 0 auto;padding: .7rem 1.5rem;}
-.form .subtitulo{    margin-bottom: 2rem;text-transform: initial;font-size: 1.8rem;text-align: center;color: #3d4763;}
-.form label{text-transform: initial;     max-width: 300px;margin: 0 auto 1rem;}
-.label{font-size: .8rem}
-.form .button.clear{font-size: .8rem; margin: 0 auto;border: none;text-decoration: none;  }
-
-.separator {display: table;margin: 2rem auto 1rem;font-size: .7rem;}
-.cancelar {cursor: pointer;margin: 5rem auto 0;padding: .5rem;display: table;text-transform: initial;font-size: .8rem;text-decoration: none}
-.cancelar:hover,.form .button.button.clear:hover{text-decoration: underline}
-
-.board[data-action-form="login"]{background:#75f8ad}
-.board[data-action-form="cadastrar"] {background-color: #92dbff}
-.workspace {display: flex;align-items: center;justify-content: space-between;}
-.workspace input{    text-align: right;width: 50% !important}
-.workspace span{font-size: .8rem;margin-left: .5rem;letter-spacing: .5px;color:#007eff;   width: 50% }
+/*  CaSES */
+#cases{    width: -moz-fit-content;width: fit-content;margin: 0 auto;    padding: 5rem 0 2rem;}
+.lista-cases {    margin: 5rem 0 2rem;}
+.lista-cases p {text-align: left;     margin-bottom: .5rem;}
+.projects{    margin-right: 5rem;max-width: 400px;}
+.projects .img{max-width: 200px;     margin: 0 0 .5rem;}
+.testimony {    padding: 2rem 2rem 2rem 3.5rem;box-shadow: -1px 1px 9px -2px #80808052;max-width: 500px;border-radius: 5px;}
+.testimony a{    font-size: .9rem;}
+.testimony .quote{background: url(img/quotes.png) no-repeat center;width: 28px;height: 28px;filter: grayscale(1) brightness(2.5);background-size: contain;display: block;position: absolute;left: -40px;top: -5px;}
 
 
 [data-action-form="login"] .formLogin{display: block}
@@ -164,6 +157,7 @@ font-weight: 100;  letter-spacing: 1px;}
         #legal .texto {margin: 0;width: 100%;}
     }
     @media screen and (max-width:700px){
+        .hero .bg{right: 0;}
         .button {
             text-align: center;
             font-size: .9rem;
@@ -211,4 +205,8 @@ font-weight: 100;  letter-spacing: 1px;}
         .modal .workspace input{    width: 50% !important}
         .modal .workspace span{    word-break: break-word;}
         img#__lpform_nome_icon{opacity: 0 !important;}
+
+        .projects {margin: 0 0 1rem;}
+        .lista-cases {margin: 2rem .5rem 0;}
+        #cases{padding: 0}
     }
