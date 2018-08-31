@@ -61,7 +61,7 @@ input:not([type="checkbox"]):not([type="button"]):not([type="submit"]), textarea
 .lista li{    margin: 1rem 0 3rem; }
 .lista p, .lista span{line-height: 2.2rem;font-size: 1.1rem;letter-spacing: 1px;}
 .lista p{width: calc(100% - 30px - .5rem);}
-.lista span {padding: .5rem;width: 30px;text-align: center;height: 30px;margin: 0 .5rem 0 0;border-radius: 100%;display: flex;justify-content: center;background: #4c5775;line-height: inherit;color: #fff;align-items: center;}
+.lista span.git,.alert span,.quote {padding: .5rem;width: 30px;text-align: center;height: 30px;margin: 0 .5rem 0 0;border-radius: 100%;display: flex;justify-content: center;background: #4c5775;line-height: inherit;color: #fff;align-items: center;}
 
 /* legal */
 ul.list {display: table;padding: .5rem 1.5rem;margin: 1rem 0;}
@@ -113,7 +113,7 @@ form.formToUs {max-width: 350px;}
 .link.min a{font-size: .8rem;max-width: 50px;height: 15px;margin-left: .2rem;display: inline-block;}
 
 /* .rodape */
-.rodape {margin-top: 5rem; background-color: #273351}
+.rodape { background-color: #273351}
 .rodape .mini-chamada {font-size: 1rem;color: #eaeaea;}
 .rodape .mini-chamada a{color: #92DBFF; font-size: 1rem}
 .rodape .link.min{color: #fff; margin: 0}
@@ -149,6 +149,17 @@ font-weight: 100;  letter-spacing: 1px;}
 [data-action-form="login"] .formLogin{display: block}
 [data-action-form="cadastrar"] .formCadastrar{display: block}
 
+/* contact & modal*/
+.button.alert{position: relative}
+.button.alert span{background: url(img/send.svg) no-repeat;     background-size: contain;padding: 0;    transform: scale(.8);}
+.button.alert:hover span{transform: scale(1)}
+
+#form-mailchip {    padding: 2.5rem 0;margin: 10rem 0 0;background: #9eccfe;display: table;width: 100%;}
+#form-mailchip label{margin:0; font-size: .8rem; }
+#form-mailchip div{    margin: .2rem auto .5rem;max-width: 400px;background: none;}
+#form-mailchip .subtitulo{     margin: .5rem 0 1rem;   color: #4C5775;font-weight: 200;font-size: 1.5rem;text-align: left;}
+#form-mailchip .button{    color: #fff;background: #515151;}
+.ativo .formToUs.form-contact {opacity: 1;pointer-events: all;transform: translateX(0);}
     @media screen and (max-width:1100px){
         .hero .img {    position: relative;right: 0;margin-top: 3rem;}
         .hero .box.flex {height: inherit;margin-bottom: 1rem;}
